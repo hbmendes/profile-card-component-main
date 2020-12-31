@@ -1,0 +1,137 @@
+:root{
+--darkCyan: hsl(185, 75%, 39%);
+--veryDark: hsl(229, 23%, 23%);
+--darkGrayish: hsl(227, 10%, 46%);
+--darkGray: hsl(0, 0%, 59%);
+--fontSize: 18px; /* name, stats */
+font-family: "Kumbh Sans", sans-serif; /* https://fonts.google.com/specimen/Kumbh+Sans */
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    background-color: var(--darkCyan);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: -200px -500px, 720px 250px;
+    background-size: 900px, 900px;
+}
+.container{
+  height: 96vh; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  width: 290px;
+  height: 320px;  
+  text-align: center;
+  background-color: white;
+  border-radius: 15px ;
+}
+.card-bg{
+  background: url(images/bg-pattern-card.svg) center;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 30%;
+}
+.perfil_image {
+  position: relative;
+  border-radius: 50px;
+  border: 4px solid white;
+  margin-top: -45px;
+  background-color: white;
+}
+.card-body{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly; 
+  border-top: hsla(0, 0%, 59%, 0.5) solid 1px;
+}
+.card-date{
+  padding: 10px;
+}
+.darkFont{
+  font-size: 18px;
+  color: var(--veryDark);
+  font-weight: 700;
+}
+.card-date .darkFont{
+  font-size: 18px;
+  color: var(--veryDark);
+  font-weight: 900;
+}
+.lightFont{
+  color: var(--darkGrayish);
+  font-weight: 400;
+  line-height: 0px;
+}
+.card-date .lightFont{
+  font-size: 9px;
+  margin-top:-8px;
+  line-height: 0px;
+  color: var(--darkGrayish);
+  font-weight: 400;
+  letter-spacing: 1.3px;
+}
+
+
+
+
+/*
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 290px;
+  height: 320px;
+    background: url(./images/bg-pattern-card.svg) 0 0 ;
+    background-repeat: repeat-x;
+    background-color: white;
+    
+}
+.perfil img{  
+    margin-top: 80px;
+    border-radius: 100px;
+    border: 5px solid white;
+    background-color: white;
+}
+.name, .city{
+    text-align: center;
+    text-decoration: none;
+}
+.stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+}
+.stats div{
+    }
+    
+p {
+    font-size: 18px;
+    margin: 10px auto 0px;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+  .dark_font {
+    font-weight: 700;
+  }
+  .light_font {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+  }
+  .middle_font {
+    font-size: 15px;
+  }
+  .short_font {
+    font-size: 10px;
+  }
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
